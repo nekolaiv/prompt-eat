@@ -15,7 +15,7 @@ We welcome contributions of all kinds: new prompts, bug fixes, documentation, an
 ---
 ### Using Pull Request Templates
 When opening a Pull Request, you can select a specific template by appending the `template` query parameter to the PR creation URL:
-> Basically, copy the url below and edit or fill out accordingly (sample provided)
+> Basically, copy and paste the url below to the browser url bar and edit or fill out accordingly (sample provided)
 
 ```
 https://github.com/nekolaiv/prompt-eat/compare/<base branch>...<compare branch>?expand=1\&template=<template>.md
