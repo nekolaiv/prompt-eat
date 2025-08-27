@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation'
 import { remark } from 'remark'
 import html from 'remark-html'
 import { getAllPrompts, getPromptBySlug } from '@/lib/prompts'
+import CopyButton from '@/components/CopyButton'
+import BackButton from '@/components/BackButton'
 
 interface Props {
   params: { slug: string }
@@ -21,17 +23,11 @@ export default async function PromptDetail({ params }: Props) {
     notFound()
   }
 
-  // Convert markdown to HTML
-  const processedContent = await remark().use(html).process(prompt.content)
-  const contentHtml = processedContent.toString()
-
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(prompt.content)
-  }
-
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
+        <BackButton />
+        
         {/* Header */}
         <div className="mb-8">
           <div className="flex justify-between items-start mb-4">
@@ -56,12 +52,10 @@ export default async function PromptDetail({ params }: Props) {
         <div className="bg-card border rounded-lg p-6">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-lg font-semibold">Prompt</h2>
-            <button className="bg-primary text-primary-foreground px-4 py-2 rounded hover:bg-primary/90">
-              Copy
-            </button>
+            <CopyButton text={prompt.content} />
           </div>
           <div className="bg-muted p-4 rounded border overflow-x-auto">
-            <pre className="whitespace-pre-wrap text-sm">{prompt.content}</pre>
+            <pre className="whitespace-pre-wrap text-sm font-mono">{prompt.content}</pre>
           </div>
         </div>
       </div>
