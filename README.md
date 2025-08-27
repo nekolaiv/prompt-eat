@@ -1,4 +1,4 @@
-# Prompt-EAT 🍽️  
+# PromptEAT 🍽️  
 **Encode • Adapt • Transform** — An Open-Source Prompt Engineering Library  
 
 ---
