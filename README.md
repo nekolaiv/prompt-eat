@@ -1,77 +1,119 @@
-# PromptEAT 🍽️  
-**Encode • Adapt • Transform** — An Open-Source Prompt Engineering Library  
+# Prompt-EAT
+
+📚 A growing open-source prompt library to **Encode, Adapt, and Transform** ideas into powerful AI interactions. 🚀
 
 ---
 
-## 🌟 Overview  
-Prompt-EAT is an **open-source prompt library** for developers, researchers, and AI enthusiasts.  
-It provides **structured, reusable prompts**, templates, and best practices to optimize **AI interactions**.  
+## 🏆 Badges
+
+[![Next.js](https://img.shields.io/badge/Next.js-14-blue?logo=next.js)](https://nextjs.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red)](https://opensource.org/)
 
 ---
 
-## ✨ Features  
-✅ Organized prompts for coding, business, creative writing, and more  
-✅ Prompt templates and reusable patterns  
-✅ Future support for APIs, CLI tools, and integrations  
-✅ Community-driven contributions  
+## 📖 Table of Contents
+
+* [Overview](#-overview)
+* [Getting Started](#-getting-started)
+  * [Prerequisites](#-prerequisites)
+  * [Installation](#-installation)
+  * [Running the Development Server](#-running-the-development-server)
+* [Contributing](#-contributing)
+* [License](#-license)
 
 ---
 
-## 🧠 Why **EAT**?  
-**E**ncode → **A**dapt → **T**ransform  
-- **Encode:** Convert ideas into structured prompts.  
-- **Adapt:** Modify and optimize prompts for different contexts.  
-- **Transform:** Deliver high-quality, actionable AI outputs. 
+## 🔍 Overview
+
+**Prompt-EAT** is an open-source **prompt library** designed for developers, creators, and researchers.
+Our mission:
+
+* **Encode** structured knowledge
+* **Adapt** prompts for different contexts
+* **Transform** ideas into AI-ready interactions
+
+### ✨ Key Features
+
+✔ Curated prompts for AI models
+✔ Organized categories for easy access
+✔ Scalable and extensible for the community
+✔ Built with **Next.js 14**, **React**, and **Tailwind CSS**
 
 ---
 
-## 🚀 Getting Started  
+## 🚀 Getting Started
 
-### **Clone the Repository**
+### ✅ Prerequisites
+
+Before you begin, ensure your environment meets these requirements:
+
+#### **1. Install Node.js**
+
+* Requires **Node.js v18+**, recommended **Node.js v22** (latest stable).
+* [Download Node.js](https://nodejs.org/en/download) or use **nvm**:
+
+  ```bash
+  nvm install 22
+  nvm use 22
+  ```
+
+#### **2. Install a Package Manager**
+
+* Use **npm** (bundled with Node.js) or **pnpm/yarn**.
+* Check version:
+
+  ```bash
+  npm -v
+  ```
+
+#### **3. Verify Git**
+
+* Ensure Git is installed:
+
+  ```bash
+  git --version
+  ```
+
+---
+
+### 🛠 Installation
+
+Clone the repository and install dependencies:
+
 ```bash
 git clone https://github.com/nekolaiv/prompt-eat.git
 cd prompt-eat
-````
-
-### **Explore Prompts**
-
-Check the `prompts/` folder for reusable templates.
+npm install
+```
 
 ---
 
+### ▶ Running the Development Server
+
+Start the Next.js development server:
+
+```bash
+npm run dev
+```
+
+The app will run at:
+
+```
+http://localhost:3000
+```
+
+---
 
 ## 🤝 Contributing
 
-We ❤️ contributions!
+We welcome contributions from the community!
 
-* Fork the repository
-* Create a feature branch
-* Add prompts or features
-* Submit a pull request
-
-Check [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+* See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+* Issues and PR templates are included to streamline collaboration.
 
 ---
 
-## 🗨 Community & Support
+## 📄 License
 
-* **Issues:** [GitHub Issues](https://github.com/nekolaiv/prompt-eat/issues)
-* **Discussions:** Coming soon
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE).
-
----
-
-## 🧾 Disclaimer
-
-This is an **independent open-source project** and is **not affiliated with any trademarked entities**.
-
----
-
-### ⭐ Show Your Support
-
-If you like this project, **star the repo** and help it grow!
+This project is licensed under the [MIT License](LICENSE).
