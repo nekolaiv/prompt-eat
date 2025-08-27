@@ -7,13 +7,79 @@ We welcome contributions of all kinds: new prompts, bug fixes, documentation, an
 ## 📜 How to Contribute
 1. **Fork** the repository
 2. **Clone** your fork
-3. Create a **feature branch**
-4. Add your changes
-5. **Commit** and push
-6. Submit a **Pull Request**
+
+   ```bash
+   git clone https://github.com/<your-username>/prompt-eat.git
+   cd prompt-eat
+   ```
+3. **Set up your environment**
+
+   * **Option A: Local (Node.js installed)**
+
+     ```bash
+     npm install
+     npm run dev
+     ```
+   * **Option B: Using Docker (recommended)**
+     Follow the [🐳 Docker Setup](#-setting-up-with-docker) section below
+4. Create a **feature branch**
+
+   ```bash
+   git checkout -b feature/my-feature
+   ```
+5. Make your changes (code, docs, or prompts)
+6. Run and test your changes (`npm run dev` or via Docker)
+7. **Commit and push**
+8. Go to you fork repository on GitHub
+9. Open a **Pull Request** towards original repo's dev branch. Check [Pull Request Guide](#using-pull-request-templates)
 
 ---
-### Using Pull Request Templates
+
+## 🐳 Setting Up with Docker
+
+We provide a **Docker setup** to make running PromptEAT consistent across environments.
+
+### 🔧 Requirements
+
+* [Docker](https://docs.docker.com/get-docker/) installed on your machine
+* (Optional) [Docker Compose](https://docs.docker.com/compose/) if you prefer using `docker-compose`
+
+### ▶️ Quick Start
+
+1. **Build the image**
+
+   ```bash
+   docker build -t prompteat:dev .
+   ```
+
+2. **Run the container** (development mode)
+
+   ```bash
+   docker run -it --rm -p 3000:3000 -v $(pwd):/app -v /app/node_modules prompteat:dev npm run dev
+   ```
+
+   * `-p 3000:3000` → maps app to [http://localhost:3000](http://localhost:3000)
+   * `-v $(pwd):/app` → mounts your local code for live reload
+   * `-v /app/node_modules` → ensures container uses its own installed deps
+
+3. **Run in production mode**
+   After building with the production Dockerfile:
+
+   ```bash
+   docker build -t prompteat:prod .
+   docker run -d -p 3000:3000 prompteat:prod
+   ```
+
+### 📝 Notes
+
+* Make sure your `.env` file is **not copied into the image** (it’s ignored by `.dockerignore`). Instead, provide env vars at runtime:
+
+  ```bash
+  docker run --env-file .env -p 3000:3000 prompteat:prod
+  ```
+* For development, edit your code locally → changes will reflect in the running container.
+---
+## Using Pull Request Templates
 When opening a Pull Request, you can select a specific template by appending the `template` query parameter to the PR creation URL:
 > Basically, copy and paste the url below to the browser url bar and edit or fill out accordingly (sample provided)
 
