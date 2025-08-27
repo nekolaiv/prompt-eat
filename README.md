@@ -29,7 +29,7 @@ It provides **structured, reusable prompts**, templates, and best practices to o
 
 ### **Clone the Repository**
 ```bash
-git clone https://github.com/your-username/prompt-eat.git
+git clone https://github.com/nekolaiv/prompt-eat.git
 cd prompt-eat
 ````
 
@@ -55,7 +55,7 @@ Check [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## 🗨 Community & Support
 
-* **Issues:** [GitHub Issues](https://github.com/your-username/[placeholder]-eat/issues)
+* **Issues:** [GitHub Issues](https://github.com/nekolaiv/prompt-eat/issues)
 * **Discussions:** Coming soon
 
 ---
