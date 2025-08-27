@@ -1,0 +1,74 @@
+# ----------------------------------------
+# Node.js dependencies (installed in image)
+# ----------------------------------------
+node_modules
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# ----------------------------------------
+# Next.js build outputs (rebuilt inside Docker)
+# ----------------------------------------
+.next
+out
+dist
+build
+
+# ----------------------------------------
+# Logs and temp files
+# ----------------------------------------
+*.log
+logs
+*.pid
+*.seed
+*.pid.lock
+
+# ----------------------------------------
+# Runtime cache files
+# ----------------------------------------
+*.tsbuildinfo
+.next/cache
+.cache
+.eslintcache
+.parcel-cache
+
+# ----------------------------------------
+# Environment variables (should not go in image)
+# ----------------------------------------
+.env
+.env*.local
+
+# ----------------------------------------
+# OS-specific files
+# ----------------------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------------------
+# Editor / IDE configs
+# ----------------------------------------
+.vscode
+.idea
+*.swp
+*.swo
+
+# ----------------------------------------
+# Docker & Git metadata (not needed in container)
+# ----------------------------------------
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+.git
+.gitignore
+.gitattributes
+
+# ----------------------------------------
+# Tests & coverage (not for production image)
+# ----------------------------------------
+coverage
+__tests__
+__mocks__
+*.test.js
+*.spec.js
+*.test.ts
+*.spec.ts

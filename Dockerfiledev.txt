@@ -1,0 +1,39 @@
+# -------- STAGE 1: Build the app --------
+# Use the official Node.js 22 image with Alpine Linux (lightweight & secure)
+FROM node:22-alpine AS builder
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy package files first (for dependency installation caching)
+COPY package.json package-lock.json ./
+
+# Install dependencies using npm ci (faster & reproducible builds)
+RUN npm ci
+
+# Copy all project files into the container
+COPY . .
+
+# Build the Next.js app (output goes into .next/)
+RUN npm run build
+
+
+# -------- STAGE 2: Run the app --------
+# Use a clean Node.js 22 Alpine image (without build tools)
+FROM node:22-alpine AS runner
+
+# Set working directory
+WORKDIR /app
+
+# Copy everything from the "builder" stage into this stage
+COPY --from=builder /app ./
+
+# Security: create a non-root user (safer than running as root)
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+USER appuser
+
+# Expose port 3000 (Next.js default)
+EXPOSE 3000
+
+# Start the app in production mode
+CMD ["npm", "start"]
