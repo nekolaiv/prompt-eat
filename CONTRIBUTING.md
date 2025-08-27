@@ -34,6 +34,69 @@ We welcome contributions of all kinds: new prompts, bug fixes, documentation, an
 9. Open a **Pull Request** towards original repo's dev branch. Check [Pull Request Guide](#using-pull-request-templates)
 
 ---
+## Contributing Prompts
+
+Want to add your own prompts to PrompEAT? It's simple!
+
+### Quick Steps
+1. **Fork this repository**
+2. **Create a new `.md` file** in the appropriate category folder under `src/prompts/`
+3. **Follow the format below**
+4. **Submit a pull request**
+
+### Prompt Format
+Each prompt should be a Markdown file with frontmatter metadata:
+
+```markdown
+---
+title: "Your Prompt Name"
+category: "Category"
+description: "Brief description of what this prompt does."
+tags: ["tag1", "tag2", "tag3"]
+---
+
+Your actual prompt content goes here.
+
+You can use placeholders like {VARIABLE_NAME} for user inputs.
+
+Include clear instructions and examples if needed.
+```
+
+### Categories
+- `general/` - Everyday Tasks
+- `coding/` - Programming, debugging, code review
+- `creative/` - Writing, storytelling, brainstorming  
+- `analysis/` - Data analysis, research, summarization
+- `productivity/` - Planning, organization, workflows
+
+### Guidelines
+- **Filename**: Use kebab-case (e.g., `bug-fixer.md`)
+- **Title**: Clear and descriptive
+- **Description**: One sentence explaining the prompt's purpose
+- **Tags**: 2-5 relevant keywords
+- **Content**: Be specific, include examples when helpful
+
+### Example
+```markdown
+---
+title: "API Documentation Generator"
+category: "Coding"
+description: "Generate clear API documentation from code examples."
+tags: ["api", "documentation", "backend"]
+---
+
+Generate comprehensive API documentation for the following endpoint:
+
+{CODE_OR_ENDPOINT}
+
+Include:
+- Method and URL
+- Parameters and types
+- Request/response examples
+- Error codes and descriptions
+```
+You may check samples and use them as templates 🚀
+---
 
 ## 🐳 Setting Up with Docker
 
