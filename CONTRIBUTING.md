@@ -13,6 +13,28 @@ We welcome contributions of all kinds: new prompts, bug fixes, documentation, an
 6. Submit a **Pull Request**
 
 ---
+### Using Pull Request Templates
+When opening a Pull Request, you can select a specific template by appending the `template` query parameter to the PR creation URL:
+
+```
+https://github.com/nekolaiv/prompt-eat/compare/<base branch>...<compare branch>?expand=1\&template=<template>.md
+```
+
+Available templates:
+- `default.md` → General purpose
+- `bug_fix.md` → For bug fixes
+- `feature.md` → For new features
+- `documentation.md` → For documentation changes
+
+Example:
+- **Bug Fix PR**  
+```
+https://github.com/nekolaiv/prompt-eat/compare/main...dev?expand=1\&template=bug_fix.md
+```
+> this opens a pull request from dev to main using bug_fix.md template
+  
+You can find all templates inside the `.github/PULL_REQUEST_TEMPLATE/` folder.
+---
 
 ## ✅ Guidelines
 - **Prompt Contributions**
