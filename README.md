@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-14-blue?logo=next.js" alt="Next.js Badge"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License Badge"></a>
+  <a href="LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-green" alt="License Badge"></a>
   <a href="https://opensource.org/"><img src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red" alt="Open Source Badge"></a>
 </p>
 
