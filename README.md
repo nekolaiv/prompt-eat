@@ -1,14 +1,13 @@
-# Prompt-EAT
-
-📚 A growing open-source prompt library to **Encode, Adapt, and Transform** ideas into powerful AI interactions. 🚀
+<h1 align="center">Prompt-EAT</h1>
+<p align="center">📚 A growing open-source prompt library to <strong>Encode, Adapt, and Transform</strong> ideas into powerful AI interactions. 🚀</p>
 
 ---
 
-## 🏆 Badges
-
-[![Next.js](https://img.shields.io/badge/Next.js-14-blue?logo=next.js)](https://nextjs.org/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red)](https://opensource.org/)
+<p align="center">
+  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-14-blue?logo=next.js" alt="Next.js Badge"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License Badge"></a>
+  <a href="https://opensource.org/"><img src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red" alt="Open Source Badge"></a>
+</p>
 
 ---
 
@@ -33,12 +32,11 @@ Our mission:
 * **Adapt** prompts for different contexts
 * **Transform** ideas into AI-ready interactions
 
-### ✨ Key Features
-
-✔ Curated prompts for AI models
-✔ Organized categories for easy access
-✔ Scalable and extensible for the community
-✔ Built with **Next.js 14**, **React**, and **Tailwind CSS**
+### ✨ Key Features  
+- ✅ **Curated prompts for AI models**  
+- ✅ **Organized categories for easy access**  
+- ✅ **Scalable and extensible for the community**  
+- ✅ **Built with Next.js 14, React, and Tailwind CSS**  
 
 ---
 
